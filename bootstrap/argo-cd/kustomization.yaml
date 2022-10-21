@@ -20,4 +20,4 @@ namespace: argocd
 resources:
 - github.com/argoproj-labs/argocd-autopilot/manifests/base?ref=v0.4.5
 - cmp-plugin.yaml
-- argocd-vault-plugin-credentials.yaml
+# - argocd-vault-plugin-credentials.yaml
