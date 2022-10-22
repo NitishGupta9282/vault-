@@ -9,7 +9,7 @@ spec:
       # Mount SA token for Kubernets auth
       # Note: In 2.4.0 onward, there is a dedicated SA for repo-server (not default)
       # Note: This is not fully supported for Kubernetes < v1.19
-      automountServiceAccountToken: true
+      # automountServiceAccountToken: true
 
       # Each of the embedded YAMLs inside cmp-plugin ConfigMap will be mounted into it's respective plugin sidecar
       volumes:
