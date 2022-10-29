@@ -12,8 +12,9 @@ configMapGenerator:
         name: autopilot-secret
   name: argocd-cm
   
-# patchesStrategicMerge:
-#  - argocd-repo-server.yaml
+patchesStrategicMerge:
+ - argocd-repo-server-deploy.yaml
+ - argocd-cm.yaml
  
 kind: Kustomization
 namespace: argocd
