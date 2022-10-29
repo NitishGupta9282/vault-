@@ -13,13 +13,13 @@ configMapGenerator:
   name: argocd-cm
   
 patchesStrategicMerge:
-#  - argocd-repo-server-deploy.yaml
+ - argocd-repo-server.yaml
 #  - argocd-cm.yaml
  
 kind: Kustomization
 namespace: argocd
 resources:
 - github.com/argoproj-labs/argocd-autopilot/manifests/base?ref=v0.4.5
-# - cmp-plugin.yaml
-# - argocd-repo-server-role.yaml
-# - argocd-repo-server-rolebinding.yaml
+- cmp-plugin.yaml
+- argocd-repo-server-role.yaml
+- argocd-repo-server-rolebinding.yaml
