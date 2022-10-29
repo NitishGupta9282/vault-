@@ -13,8 +13,8 @@ configMapGenerator:
   name: argocd-cm
   
 patchesStrategicMerge:
- - argocd-repo-server-deploy.yaml
- - argocd-cm.yaml
+#  - argocd-repo-server-deploy.yaml
+#  - argocd-cm.yaml
  
 kind: Kustomization
 namespace: argocd
