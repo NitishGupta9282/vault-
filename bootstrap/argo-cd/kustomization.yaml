@@ -19,4 +19,4 @@ images:
 kind: Kustomization
 namespace: argocd
 resources:
-- github.com/argoproj-labs/argocd-autopilot/manifests/base?ref=v0.4.5
+- github.com/argoproj/argo-cd/manifests/install.yaml?ref=v2.5.0
