@@ -11,6 +11,11 @@ configMapGenerator:
         key: git_username
         name: autopilot-secret
   name: argocd-cm
+  
+images:
+   - name: quay.io/argoproj/argocd
+     newTag: v2.5.0
+     
 kind: Kustomization
 namespace: argocd
 resources:
