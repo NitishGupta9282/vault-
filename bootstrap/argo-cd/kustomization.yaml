@@ -12,6 +12,10 @@ configMapGenerator:
         name: autopilot-secret
   name: argocd-cm
   
+images:
+  - name: quay.io/argoproj/argocd
+    newTag: 2.5.0
+    
 patchesStrategicMerge:
  - argocd-repo-server.yaml
 #  - argocd-cm.yaml
