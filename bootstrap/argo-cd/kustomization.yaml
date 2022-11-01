@@ -19,4 +19,4 @@ images:
 kind: Kustomization
 namespace: argocd
 resources:
-- https://github.com/argoproj/argo-cd/blob/v2.5.0/manifests/install.yaml
+- https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
